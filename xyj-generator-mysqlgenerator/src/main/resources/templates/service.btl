@@ -1,0 +1,16 @@
+package ${table.servicePackageName};
+import com.xyjsoft.core.base.Manager;
+import ${table.modelPackageName}.${table.className};
+import com.xyjsoft.core.service.CurdService;
+
+/**
+ * ---------------------------
+ * ${table.description} (${table.className}Service)         
+ * ---------------------------
+ * 作者：  xyjsoft
+ * 时间：  ${strutil.formatDate(date(),'yyyy-MM-dd HH:mm:ss')}
+ * ---------------------------
+ */
+public interface ${table.className}Service extends CurdService<${table.className}>,Manager<String,${table.className}>  {
+
+}

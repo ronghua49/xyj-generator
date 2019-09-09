@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/xyj-generator.iml" filepath="$PROJECT_DIR$/.idea/xyj-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xyj-generator-common/xyj-generator-common.iml" filepath="$PROJECT_DIR$/xyj-generator-common/xyj-generator-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xyj-generator-core/xyj-generator-core.iml" filepath="$PROJECT_DIR$/xyj-generator-core/xyj-generator-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xyj-generator-dbms/xyj-generator-dbms.iml" filepath="$PROJECT_DIR$/xyj-generator-dbms/xyj-generator-dbms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xyj-generator-mysqlgenerator/xyj-generator-mysqlgenerator.iml" filepath="$PROJECT_DIR$/xyj-generator-mysqlgenerator/xyj-generator-mysqlgenerator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xyj-generator-pom/xyj-generator-pom.iml" filepath="$PROJECT_DIR$/xyj-generator-pom/xyj-generator-pom.iml" />
+    </modules>
+  </component>
+</project>

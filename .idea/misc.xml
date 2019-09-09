@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/xyj-generator-common/pom.xml" />
+        <option value="$PROJECT_DIR$/xyj-generator-core/pom.xml" />
+        <option value="$PROJECT_DIR$/xyj-generator-dbms/pom.xml" />
+        <option value="$PROJECT_DIR$/xyj-generator-mysqlgenerator/pom.xml" />
+        <option value="$PROJECT_DIR$/xyj-generator-pom/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

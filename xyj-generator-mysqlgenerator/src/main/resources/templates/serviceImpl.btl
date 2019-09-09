@@ -1,0 +1,78 @@
+package ${table.serviceImplPackageName};
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.xyjsoft.core.page.MybatisPageHelper;
+import com.xyjsoft.core.page.PageRequest;
+import com.xyjsoft.core.page.PageResult;
+import com.xyjsoft.core.base.MyBatisDao;
+import com.xyjsoft.core.base.impl.AbstractManagerImpl;
+import com.xyjsoft.core.query.PageList;
+import com.xyjsoft.core.query.QueryFilter;
+
+import ${table.modelPackageName}.${table.className};
+import ${table.daoPackageName}.${table.className}Mapper;
+import ${table.servicePackageName}.${table.className}Service;
+
+/**
+ * ---------------------------
+ * ${table.description} (${table.className}ServiceImpl)         
+ * ---------------------------
+ * 作者：  xyjsoft
+ * 时间：  ${strutil.formatDate(date(),'yyyy-MM-dd HH:mm:ss')}
+ * ---------------------------
+ */
+@Service
+public class ${table.className}ServiceImpl extends AbstractManagerImpl<String, ${table.className}> implements ${table.className}Service {
+
+	@Autowired
+	private ${table.className}Mapper ${table.objectName}Mapper;
+
+	@Override
+	public int save(${table.className} record) {
+		if(record.${table.primaryKey.getter}() == null || record.${table.primaryKey.getter}() == 0) {
+			return ${table.objectName}Mapper.add(record);
+		}
+		return ${table.objectName}Mapper.update(record);
+	}
+
+	@Override
+	public int delete(${table.className} record) {
+		return ${table.objectName}Mapper.delete(record.getId());
+	}
+
+	@Override
+	public int delete(List<${table.className}> records) {
+		for(${table.className} record:records) {
+			delete(record);
+		}
+		return 1;
+	}
+	
+    @Override
+	public int deleteT(List<Long> records) {
+		for(Long id:records) {
+			${table.objectName}Mapper.delete(id);
+		}
+		return 1;
+	}
+	
+	@Override
+	public ${table.className} findById(${table.primaryKey.javaType} id) {
+		return ${table.objectName}Mapper.findById(id);
+	}
+
+	@Override
+	public PageResult findPage(PageRequest pageRequest) {
+		return MybatisPageHelper.findPage(pageRequest, ${table.objectName}Mapper);
+	}
+	
+	@Override
+	protected MyBatisDao<String, ${table.className}> getDao() {
+		return ${table.objectName}Mapper;
+	}
+	
+}
