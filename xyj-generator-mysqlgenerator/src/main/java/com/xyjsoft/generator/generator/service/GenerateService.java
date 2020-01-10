@@ -7,6 +7,8 @@ import com.xyjsoft.generator.dbms.model.Table;
 import com.xyjsoft.generator.dbms.vo.ConnParam;
 import com.xyjsoft.generator.generator.vo.GenerateModel;
 
+import javax.servlet.http.HttpServletResponse;
+
 /**
  * 代码生成服务
  * @author Louis
