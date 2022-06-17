@@ -31,7 +31,7 @@
 		<pagehelper.spring.version>1.2.5</pagehelper.spring.version>
 		<swagger.version>2.8.0</swagger.version>
 		<mybatis.spring.version>1.3.2</mybatis.spring.version>
-		<fastjson.version>1.2.48</fastjson.version>
+		<fastjson.version>1.2.83</fastjson.version>
 		<beetl.version>1.1.68.RELEASE</beetl.version>
 		<ojdbc6.version>11.2.0.3</ojdbc6.version>
 	</properties>
